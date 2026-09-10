@@ -26,3 +26,5 @@ Every push to `main` should trigger a new production deployment after the reposi
 - `/legal/`
 
 No Timeweb FTP workflow, Worker route, or legacy deployment configuration is used in this repository.
+
+Connection check: 2026-09-10.
