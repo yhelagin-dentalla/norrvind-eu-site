@@ -1,0 +1,3 @@
+NORRVIND deployment check
+2026-09-10
+GitHub repository: yhelagin-dentalla/norrvind-eu-site
