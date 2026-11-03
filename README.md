@@ -18,9 +18,9 @@ Every push to `main` should trigger a new production deployment after the reposi
 
 ## Public routes
 
-- `/`
-- `/norrnote/`
-- `/norrplan/`
+- `/` — NorrNote
+- `/ru/` — NorrNote (RU)
+- `/de/` — NorrNote (DE)
 - `/privacy/norrnote/`
 - `/support/`
 - `/legal/`
