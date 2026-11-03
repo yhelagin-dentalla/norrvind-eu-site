@@ -44,9 +44,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .norr-brand{display:inline-flex;align-items:center;gap:12px;font-weight:850;font-size:25px;letter-spacing:-.045em;white-space:nowrap}
 .brand-sail{
   width:44px;height:44px;display:inline-block;
-  background:url('/assets/norrnote-logo.svg') center/contain no-repeat;
-  mix-blend-mode:multiply;
-  filter:grayscale(1) contrast(1.35) sepia(.16) saturate(2.8) hue-rotate(170deg) brightness(.72);
+  background:url('/assets/norrnote-sail.svg') center/contain no-repeat;
 }
 .nav-right{display:flex;align-items:center;gap:10px;margin-left:auto}
 .nav-link{padding:9px 11px;font-size:14px;font-weight:700;color:var(--ink-soft);border-radius:999px;transition:.22s ease}
