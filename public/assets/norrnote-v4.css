@@ -93,11 +93,11 @@ h1{
   border:8px solid rgba(255,255,255,.94);box-shadow:var(--shadow);
   transition:transform .25s ease,box-shadow .25s ease;
 }
-.screen-card img{width:100%;height:100%;object-fit:cover}
-.screen-main{width:63%;aspect-ratio:1.777;left:19%;top:120px;z-index:6;transform:rotate(-1deg)}
-.screen-left{width:50%;aspect-ratio:1.777;left:-1%;top:205px;z-index:3;transform:rotate(-7deg)}
-.screen-right{width:51%;aspect-ratio:1.777;right:-3%;top:225px;z-index:4;transform:rotate(6deg)}
-.screen-bottom{width:46%;aspect-ratio:1.777;left:27%;bottom:10px;z-index:5;transform:rotate(2deg)}
+.screen-card img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;image-rendering:auto}
+.screen-main{width:58%;aspect-ratio:1.18;left:21%;top:92px;z-index:6;transform:rotate(-1deg)}
+.screen-left{width:44%;aspect-ratio:1.18;left:0;top:215px;z-index:3;transform:rotate(-7deg)}
+.screen-right{width:45%;aspect-ratio:1.18;right:-1%;top:220px;z-index:4;transform:rotate(6deg)}
+.screen-bottom{width:42%;aspect-ratio:1.18;left:29%;bottom:0;z-index:5;transform:rotate(2deg)}
 .screen-card:hover{box-shadow:0 34px 86px rgba(25,45,68,.20)}
 .float-note{
   position:absolute;z-index:12;padding:18px 20px;border-radius:22px;
@@ -141,7 +141,7 @@ h2{font-size:clamp(42px,5vw,68px);line-height:1.02;letter-spacing:-.052em;margin
   position:relative;overflow:hidden;min-height:320px;border-radius:30px;background:#fff;
   border:1px solid rgba(17,38,65,.08);box-shadow:var(--soft-shadow)
 }
-.gallery-card img{width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.2,.75,.2,1)}
+.gallery-card img{width:100%;height:100%;object-fit:cover;object-position:50% 10%;transition:transform .65s cubic-bezier(.2,.75,.2,1)}
 .gallery-card:hover img{transform:scale(1.025)}
 .gallery-stack{display:grid;grid-template-rows:1fr 1fr;gap:18px}
 .gallery-stack .gallery-card{min-height:151px}
@@ -207,10 +207,10 @@ h2{font-size:clamp(42px,5vw,68px);line-height:1.02;letter-spacing:-.052em;margin
   .hero-lead{font-size:18px}
   .check-grid{grid-template-columns:1fr;gap:9px}
   .visual-stage{min-height:485px;margin-top:8px}
-  .screen-main{width:72%;left:14%;top:105px}
-  .screen-left{width:59%;left:-9%;top:200px}
-  .screen-right{width:58%;right:-8%;top:212px}
-  .screen-bottom{width:58%;left:21%;bottom:16px}
+  .screen-main{width:66%;left:17%;top:84px}
+  .screen-left{width:48%;left:-2%;top:206px}
+  .screen-right{width:49%;right:-2%;top:212px}
+  .screen-bottom{width:46%;left:27%;bottom:4px}
   .float-note{padding:13px 14px;border-radius:17px}.float-note strong{font-size:15px}
   .note-a{width:145px;top:16px}.note-b{width:140px;top:42px}.note-c{width:132px;bottom:50px}.note-d{width:128px;bottom:30px}
   .feature-row{grid-template-columns:1fr}
