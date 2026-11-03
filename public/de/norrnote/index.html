@@ -2,67 +2,175 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#fffdf9">
-<meta name="description" content="NorrNote — eine einfache, lokal ausgerichtete App von NORRVIND für Notizen, Listen und Erinnerungen.">
-<title>NorrNote — Farbige Karten</title>
-<link rel="canonical" href="https://norrvind.app/de/norrnote/"><link rel="alternate" hreflang="en" href="https://norrvind.app/norrnote/"><link rel="alternate" hreflang="ru" href="https://norrvind.app/ru/norrnote/"><link rel="alternate" hreflang="de" href="https://norrvind.app/de/norrnote/"><link rel="alternate" hreflang="x-default" href="https://norrvind.app/norrnote/">
-<link rel="stylesheet" href="/assets/color-cards-v3.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fffaf4">
+<meta name="description" content="NorrNote — farbige Notizen, Listen, Erinnerungen, Kalender, Spracheingabe und Dateien. Lokal zuerst, ohne Pflichtkonto und ohne Abo.">
+<title>NorrNote — Notizen ohne Ballast</title>
+<link rel="canonical" href="https://norrvind.app/de/norrnote/">
+<link rel="alternate" hreflang="en" href="https://norrvind.app/norrnote/">
+<link rel="alternate" hreflang="ru" href="https://norrvind.app/ru/norrnote/">
+<link rel="alternate" hreflang="de" href="https://norrvind.app/de/norrnote/">
+<link rel="alternate" hreflang="x-default" href="https://norrvind.app/norrnote/">
+<meta property="og:title" content="NorrNote — Notizen ohne Ballast">
+<meta property="og:description" content="Farbige Notizen, Listen, Erinnerungen, Kalender, Spracheingabe und Dateien. Lokal zuerst. Kein Abo.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://norrvind.app/de/norrnote/">
+<link rel="stylesheet" href="/assets/norrnote-v4.css">
 </head>
 <body>
 <header class="site-header">
   <div class="shell nav">
-    <a class="logo-word" href="/de/norrnote/">NorrNote</a>
+    <a class="norr-brand" href="/de/norrnote/" aria-label="NorrNote"><span class="brand-sail" aria-hidden="true"></span><span>NorrNote</span></a>
     <div class="nav-right">
-      <a class="pill" href="#features">Funktionen</a>
-      <nav class="language-switcher" aria-label="Sprache wählen"><a href="/norrnote/" hreflang="en" lang="en">EN</a><a href="/ru/norrnote/" hreflang="ru" lang="ru">RU</a><a href="/de/norrnote/" hreflang="de" lang="de" aria-current="page">DE</a></nav>
+      <a class="nav-link" href="#features">Funktionen</a>
+      <a class="nav-link" href="/de/privacy/norrnote/">Datenschutz</a>
+      <a class="nav-link" href="#pricing">Preis</a>
+      <a class="nav-link" href="/de/support/">Support</a>
+      <nav class="language-switcher" aria-label="Sprache wählen">
+        <a href="/norrnote/" hreflang="en" lang="en">EN</a>
+        <a href="/ru/norrnote/" hreflang="ru" lang="ru">RU</a>
+        <a href="/de/norrnote/" hreflang="de" lang="de" aria-current="page">DE</a>
+      </nav>
+      <a class="play-btn compact" href="https://play.google.com/store/apps/details?id=su.norrvind.norrnote" target="_blank" rel="noopener" aria-label="NorrNote bei Google Play herunterladen">
+        <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.4 2.2 13.8 12 3.4 21.8c-.3-.4-.4-.9-.4-1.5V3.7c0-.6.1-1.1.4-1.5Z"/><path fill="#4285F4" d="m13.8 12 3-2.8L6.4 3.3c-.9-.5-1.8-.8-2.5-.7L13.8 12Z"/><path fill="#FBBC04" d="m13.8 12-9.9 9.4c.7.1 1.6-.2 2.5-.7l10.4-5.9-3-2.8Z"/><path fill="#EA4335" d="m16.8 9.2 3.4 1.9c1.1.6 1.1 1.4 0 2l-3.4 1.9-3-3 3-2.8Z"/></svg>
+        <span>Bei Google Play</span>
+      </a>
     </div>
   </div>
 </header>
+
 <main>
-<section class="shell hero">
-  <div class="hero-grid">
-    <div>
-      <div class="kicker">Leichter an alles denken</div>
-      <h1>Notizen mit<br>genau genug<br>Persönlichkeit.</h1>
-      <p>Farbcodierte Notizen, praktische Listen und Erinnerungen — schnell genug für den Alltag und einfach genug für die dauerhafte Nutzung.</p>
-      <a href="#features" class="cta">NorrNote entdecken →</a>
+<section class="hero">
+  <div class="shell hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow reveal">Die ruhigere Art, nichts zu vergessen</div>
+      <h1 class="reveal">Notizen, Erinnerungen und Dateien — ohne Ballast.</h1>
+      <p class="hero-lead reveal">Eine klare, farbige Notiz-App für den Alltag. Ideen festhalten, den Tag planen, Dateien nah bei der Notiz behalten und rechtzeitig erinnert werden.</p>
+      <div class="check-grid reveal">
+        <div class="check-item"><span class="check-dot">✓</span><span>Farbige Notizen &amp; Listen</span></div>
+        <div class="check-item"><span class="check-dot">✓</span><span>Bilder &amp; Dateianhänge</span></div>
+        <div class="check-item"><span class="check-dot">✓</span><span>Kalender &amp; Erinnerungen</span></div>
+        <div class="check-item"><span class="check-dot">✓</span><span>Startbildschirm-Widget</span></div>
+        <div class="check-item"><span class="check-dot">✓</span><span>Spracheingabe</span></div>
+        <div class="check-item"><span class="check-dot">✓</span><span>Kein Pflichtkonto</span></div>
+        <div class="check-item"><span class="check-dot">✓</span><span>Lokal zuerst — Daten auf Ihrem Gerät</span></div>
+        <div class="check-item"><span class="check-dot">✓</span><span>Kein Abo</span></div>
+      </div>
+      <div class="hero-actions reveal">
+        <a class="play-btn" href="https://play.google.com/store/apps/details?id=su.norrvind.norrnote" target="_blank" rel="noopener">
+          <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.4 2.2 13.8 12 3.4 21.8c-.3-.4-.4-.9-.4-1.5V3.7c0-.6.1-1.1.4-1.5Z"/><path fill="#4285F4" d="m13.8 12 3-2.8L6.4 3.3c-.9-.5-1.8-.8-2.5-.7L13.8 12Z"/><path fill="#FBBC04" d="m13.8 12-9.9 9.4c.7.1 1.6-.2 2.5-.7l10.4-5.9-3-2.8Z"/><path fill="#EA4335" d="m16.8 9.2 3.4 1.9c1.1.6 1.1 1.4 0 2l-3.4 1.9-3-3 3-2.8Z"/></svg>
+          <span>Bei Google Play herunterladen</span>
+        </a>
+        <a class="ghost-btn" href="#features">Funktionen ansehen →</a>
+      </div>
+      <div class="hero-meta reveal">Android 10+ · Kostenlos starten · Full einmalig kaufen</div>
     </div>
-    <div class="board">
-      <div class="logo-card"><img src="/assets/norrnote-logo.svg" alt="NorrNote-Logo"></div>
-      <div class="sticky s1">Wochenendliste<div class="check"><span class="dot"></span>Zug buchen</div><div class="check"><span class="dot"></span>Ladegerät einpacken</div></div>
-      <div class="sticky s2">Nicht vergessen<div class="small">Anna um 18:00 anrufen</div></div>
-      <div class="sticky s3">Projektnotizen<div class="small">Drei Ideen, die bleiben sollten.</div></div>
-      <div class="sticky s4">Geburtstag<div class="small">Papa · 14. Oktober</div></div>
+
+    <div class="visual-stage reveal" aria-label="NorrNote App-Vorschau">
+      <div class="stage-glow"></div>
+      <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span>
+
+      <div class="screen-card screen-left" data-parallax="1.1"><img src="https://play-lh.googleusercontent.com/ZZ3Mv69cW5g_v7m3FBmv36UiPzHurw-kjveHQTC4FKfz1BuBGsgkeD5CEa8625toFl4rm5DMTraJ5xFY0V4ac2A=w1052-h592-rw" alt="NorrNote App-Bildschirm" loading="eager"></div>
+      <div class="screen-card screen-main" data-parallax="1.8"><img src="https://play-lh.googleusercontent.com/kxkihClOWNDhJefLIHEtzV7ZtvFjsLcyfdu1G1rKhIvZGr4PEFThik51MsaNuGlkI68BzcWcLNCYJSJvwrC1=w1052-h592-rw" alt="NorrNote mit farbigen Notizen" loading="eager"></div>
+      <div class="screen-card screen-right" data-parallax="1.35"><img src="https://play-lh.googleusercontent.com/qlrNW7LUY0RnmETd5GAOy2PO5qPXb04_FrIP29KTkQ3h-rGkhN8Tu2p2b_tUj8K-mx267uPtm024gakEO_355A=w1052-h592-rw" alt="NorrNote App-Bildschirm" loading="eager"></div>
+      <div class="screen-card screen-bottom" data-parallax=".8"><img src="https://play-lh.googleusercontent.com/qT734wmFM3bX7Ft2woE6V1X8zvcO-5ZTkryD1_n7TIF5Fv2QPP33oI5x6pIUFqpOXLUq3aMSnCLn3PScSMGogAM=w1052-h592-rw" alt="NorrNote App-Bildschirm" loading="lazy"></div>
+
+      <div class="float-note note-a" data-parallax="2.2"><strong>Wochenendpläne</strong><div class="micro">✓ Im Wald wandern<br>□ Zum See fahren<br>□ Fotos machen</div></div>
+      <div class="float-note note-b" data-parallax="2.5"><strong>Ideen</strong><div class="micro">Gartentagebuch<br>Buchempfehlung</div></div>
+      <div class="float-note note-c" data-parallax="2.1"><strong>Reisefotos</strong><div class="micro">3 Dateien angehängt</div></div>
+      <div class="float-note note-d" data-parallax="2.35"><strong>Vitamine nehmen</strong><div class="micro">Erinnerung · 09:00</div></div>
     </div>
   </div>
 </section>
-<div class="marquee"><div class="shell marquee-track"><span>KEIN KONTO</span><span>OFFLINE ZUERST</span><span>WIDGET</span><span>WIEDERHOLTE ERINNERUNGEN</span><span>PIN-GESCHÜTZTE NOTIZEN</span><span>FULL EINMAL KAUFEN</span></div></div>
 
-<section class="section" id="features"><div class="shell">
-  <div class="kicker">Für den täglichen Gebrauch</div>
-  <h2>Nützlicher als ein leeres Blatt.<br>Einfacher als ein Arbeitsbereich.</h2>
-  <div class="grid">
-    <div class="feature f1"><h3>„Heute“ hält den Tag im Blick.</h3><p>Tägliche Notizen, Aufgaben und Erinnerungen stehen dort, wo Sie sie erwarten — bei dem Datum, das zählt.</p></div>
-    <div class="feature f2"><h3>„Dauerhaft“ bewahrt Wichtiges langfristig.</h3><p>Referenznotizen bleiben geordnet, ohne Ordner in Ordnern.</p></div>
-    <div class="feature f3"><h3>Schnell erfassen</h3><p>Teilen Sie Text, Links und Fotos direkt mit NorrNote.</p></div>
-    <div class="feature f4"><h3>Intelligente Erinnerungen</h3><p>Direkt in der Benachrichtigung wiederholen, verschieben, erledigen oder öffnen.</p></div>
-    <div class="feature f5"><h3>Globale Suche</h3><p>Durchsuchen Sie Titel, Texte, Listen, Kategorien und Notiztypen.</p></div>
+<section class="feature-strip">
+  <div class="shell feature-row reveal">
+    <article class="mini-feature"><div class="feature-icon">▣</div><div><h3>Lokal zuerst</h3><p>Ihre Notizen liegen auf dem Gerät und bleiben offline verfügbar.</p></div></article>
+    <article class="mini-feature"><div class="feature-icon">△</div><div><h3>Google-Drive-Backup</h3><p>Das optionale Backup liegt in Ihrem eigenen Google Drive.</p></div></article>
+    <article class="mini-feature"><div class="feature-icon">●</div><div><h3>Spracheingabe</h3><p>Gedanken schnell per Sprache in Notizen verwandeln.</p></div></article>
+    <article class="mini-feature"><div class="feature-icon">◇</div><div><h3>Full einmalig</h3><p>Den vollständigen Funktionsumfang einmal freischalten. Kein Abo.</p></div></article>
   </div>
-</div></section>
+</section>
 
-<section class="dark section"><div class="shell">
-  <div class="kicker">Standardmäßig privat</div>
-  <h2>Ihr Notizbuch braucht kein Publikum.</h2>
-  <p style="max-width:760px;font-size:20px">NorrNote speichert lokal und funktioniert offline. Keine verpflichtende Registrierung. Optionale Backups werden in Ihrem eigenen Google Drive gespeichert. Ausgewählte Notizen lassen sich mit einer PIN schützen.</p>
-  <div class="row"><span class="tag">Lokal zuerst</span><span class="tag">Keine Werbung</span><span class="tag">Kein Analyse-SDK</span><span class="tag">Optionales Drive-Backup</span></div>
-</div></section>
+<section class="section" id="screens">
+  <div class="shell">
+    <div class="section-head reveal">
+      <div class="kicker">NorrNote im Einsatz</div>
+      <h2>Für die Dinge gebaut, an die Sie wirklich denken müssen.</h2>
+      <p>Echte Screens der aktuellen Google-Play-Version — farbig genug zum schnellen Erfassen und strukturiert genug, um dauerhaft nützlich zu bleiben.</p>
+    </div>
+    <div class="screenshot-gallery reveal">
+      <figure class="gallery-card"><img src="https://play-lh.googleusercontent.com/kxkihClOWNDhJefLIHEtzV7ZtvFjsLcyfdu1G1rKhIvZGr4PEFThik51MsaNuGlkI68BzcWcLNCYJSJvwrC1=w1052-h592-rw" alt="NorrNote Screenshot" loading="lazy"></figure>
+      <div class="gallery-stack">
+        <figure class="gallery-card"><img src="https://play-lh.googleusercontent.com/qT734wmFM3bX7Ft2woE6V1X8zvcO-5ZTkryD1_n7TIF5Fv2QPP33oI5x6pIUFqpOXLUq3aMSnCLn3PScSMGogAM=w1052-h592-rw" alt="NorrNote Screenshot" loading="lazy"></figure>
+        <figure class="gallery-card"><img src="https://play-lh.googleusercontent.com/hdf_aCYjynWI5DxfwErgPi_rS0OSxt-QioiAr39j5AvN5aBJxIPR_fNF9iBAzlQtpQNa0T8ekHkQR8CU8UTyVGs=w1052-h592-rw" alt="NorrNote Screenshot" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="section"><div class="shell pricebox">
-  <div><div class="kicker">Einfacher Preis</div><h2>Kostenlos starten.<br>Full einmalig. Kein Abo.</h2><p style="font-size:19px;color:#617482">Nutzen Sie die Kernfunktionen kostenlos. Wenn Sie alle Funktionen möchten, erwerben Sie NorrNote Full einmalig über Google Play.</p></div>
-  <div><div class="bigprice" style="font-size:clamp(24px,3vw,34px);line-height:1.2">Regionale Preise werden von Google Play festgelegt.</div><span class="cta">Demnächst</span></div>
-</div></section>
+<section class="section" id="features">
+  <div class="shell">
+    <div class="section-head reveal">
+      <div class="kicker">Für jeden Tag</div>
+      <h2>Nützlicher als ein leeres Blatt. Einfacher als ein Workspace.</h2>
+    </div>
+    <div class="feature-grid">
+      <article class="big-feature bf1 reveal"><span class="badge">Heute</span><div><h3>Der heutige Tag bleibt sichtbar.</h3><p>Tägliche Notizen, Aufgaben und Erinnerungen stehen beim Datum, das zählt.</p></div></article>
+      <article class="big-feature bf2 reveal"><span class="badge">Dauerhaft</span><div><h3>Referenznotizen bleiben griffbereit.</h3><p>Wichtige Informationen bleiben aktuell, ohne Ordner in Ordnern.</p></div></article>
+      <article class="big-feature bf3 reveal"><span class="badge">Schnell erfassen</span><div><h3>Sprache, Text, Links und Fotos.</h3><p>Schnell über Tastatur, Mikrofon oder Android Share speichern.</p></div></article>
+      <article class="big-feature bf4 reveal"><span class="badge">Erinnerungen</span><div><h3>Wiederholen. Verschieben. Erledigen.</h3><p>Erinnerungen direkt in der Benachrichtigung bearbeiten.</p></div></article>
+      <article class="big-feature bf5 reveal"><span class="badge">Anhänge</span><div><h3>Bilder und Dateien gehören zur Notiz.</h3><p>Der Kontext bleibt bei dem, woran Sie sich erinnern wollten.</p></div></article>
+      <article class="big-feature bf6 reveal"><span class="badge">Kalender</span><div><h3>Termine ohne unnötige Komplexität.</h3><p>Notizen und Erinnerungen dort sehen, wo sie zeitlich hingehören.</p></div></article>
+      <article class="big-feature bf7 reveal"><span class="badge">Suche &amp; Widget</span><div><h3>Schneller finden. Früher sehen.</h3><p>Globale Suche und Widget halten wichtige Informationen einen Schritt entfernt.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="privacy-panel reveal">
+      <div class="kicker">Standardmäßig privat</div>
+      <h2>Ihr Notizbuch braucht kein Publikum.</h2>
+      <p>NorrNote ist local-first und funktioniert offline. Ein NORRVIND-Konto ist nicht erforderlich. Optionale Backups gehen in Ihr eigenes Google Drive, und ausgewählte Notizen lassen sich mit einer PIN schützen.</p>
+      <div class="tag-row"><span class="tag">Lokal zuerst</span><span class="tag">Keine Werbung</span><span class="tag">Kein Analyse-SDK</span><span class="tag">Optionales Drive-Backup</span><span class="tag">PIN-Schutz</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="shell">
+    <div class="pricing-band reveal">
+      <div class="pricing-title">Kostenlos starten. Full einmalig. Kein Abo.</div>
+      <div class="pricing-divider" aria-hidden="true"></div>
+      <p class="pricing-copy">NorrNote lässt sich mit den wichtigsten Funktionen kostenlos nutzen. Für den vollständigen Funktionsumfang kaufen Sie Full einmalig über Google Play. Die regionalen Preise legt Google Play fest.</p>
+      <a class="play-btn" href="https://play.google.com/store/apps/details?id=su.norrvind.norrnote" target="_blank" rel="noopener">NorrNote bei Google Play →</a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="shell reveal">
+    <div class="kicker">Bereit, wenn Sie es sind</div>
+    <h2>Wichtiges behalten. Ballast weglassen.</h2>
+    <p>NorrNote bei Google Play herunterladen und heute kostenlos starten.</p>
+    <a class="play-btn" href="https://play.google.com/store/apps/details?id=su.norrvind.norrnote" target="_blank" rel="noopener">
+      <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.4 2.2 13.8 12 3.4 21.8c-.3-.4-.4-.9-.4-1.5V3.7c0-.6.1-1.1.4-1.5Z"/><path fill="#4285F4" d="m13.8 12 3-2.8L6.4 3.3c-.9-.5-1.8-.8-2.5-.7L13.8 12Z"/><path fill="#FBBC04" d="m13.8 12-9.9 9.4c.7.1 1.6-.2 2.5-.7l10.4-5.9-3-2.8Z"/><path fill="#EA4335" d="m16.8 9.2 3.4 1.9c1.1.6 1.1 1.4 0 2l-3.4 1.9-3-3 3-2.8Z"/></svg>
+      <span>Bei Google Play herunterladen</span>
+    </a>
+  </div>
+</section>
 </main>
-<footer class="footer"><div class="shell footer-row"><div><strong>NORRVIND · NorrNote</strong><div class="copyright">© 2026 NORRVIND</div></div><div class="footer-links"><a href="/de/">NORRVIND</a><a href="/de/privacy/norrnote/">Datenschutz</a><a href="/de/support/">Support</a><a href="/de/legal/">Rechtliches</a></div></div></footer>
+
+<footer class="footer">
+  <div class="lighthouse-scene" aria-hidden="true"><div class="lighthouse-light"></div><div class="lighthouse-top"></div><div class="lighthouse-tower"></div></div>
+  <div class="shell footer-row">
+    <div><a class="norr-brand" href="/de/norrnote/"><span class="brand-sail" aria-hidden="true"></span><span>NorrNote</span></a><div class="copyright">© 2026 NORRVIND</div></div>
+    <div class="footer-links"><a href="/de/">NORRVIND</a><a href="/de/privacy/norrnote/">Datenschutz</a><a href="/de/support/">Support</a><a href="/de/legal/">Rechtliches</a></div>
+  </div>
+</footer>
+
+<a class="play-btn mobile-play" href="https://play.google.com/store/apps/details?id=su.norrvind.norrnote" target="_blank" rel="noopener" aria-label="NorrNote bei Google Play herunterladen">Bei Google Play herunterladen</a>
+<script src="/assets/norrnote-v4.js" defer></script>
 </body>
 </html>
