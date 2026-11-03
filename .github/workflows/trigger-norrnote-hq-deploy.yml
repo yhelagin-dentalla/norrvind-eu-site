@@ -1,0 +1,26 @@
+name: Trigger NorrNote HQ production deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/trigger-norrnote-hq-deploy.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Commit production deploy marker
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "NorrNote HQ deploy $(date -u +%Y-%m-%dT%H:%M:%SZ)" > public/deploy-norrnote-hq-action.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/deploy-norrnote-hq-action.txt
+          git commit -m "Publish NorrNote HQ landing assets"
+          git push
