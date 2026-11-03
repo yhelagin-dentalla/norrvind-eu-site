@@ -1,0 +1,59 @@
+name: Cache NorrNote Google Play screenshots
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cache-norrnote-screens.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  cache-screens:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download NorrNote screenshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p public/assets/norrnote
+          curl --fail --location --retry 3 --silent --show-error \
+            'https://play-lh.googleusercontent.com/kxkihClOWNDhJefLIHEtzV7ZtvFjsLcyfdu1G1rKhIvZGr4PEFThik51MsaNuGlkI68BzcWcLNCYJSJvwrC1=w1052-h592-rw' \
+            -o public/assets/norrnote/01-today.webp
+          curl --fail --location --retry 3 --silent --show-error \
+            'https://play-lh.googleusercontent.com/ZZ3Mv69cW5g_v7m3FBmv36UiPzHurw-kjveHQTC4FKfz1BuBGsgkeD5CEa8625toFl4rm5DMTraJ5xFY0V4ac2A=w1052-h592-rw' \
+            -o public/assets/norrnote/02-create.webp
+          curl --fail --location --retry 3 --silent --show-error \
+            'https://play-lh.googleusercontent.com/qlrNW7LUY0RnmETd5GAOy2PO5qPXb04_FrIP29KTkQ3h-rGkhN8Tu2p2b_tUj8K-mx267uPtm024gakEO_355A=w1052-h592-rw' \
+            -o public/assets/norrnote/03-permanent.webp
+          curl --fail --location --retry 3 --silent --show-error \
+            'https://play-lh.googleusercontent.com/qT734wmFM3bX7Ft2woE6V1X8zvcO-5ZTkryD1_n7TIF5Fv2QPP33oI5x6pIUFqpOXLUq3aMSnCLn3PScSMGogAM=w1052-h592-rw' \
+            -o public/assets/norrnote/04-reminders.webp
+          curl --fail --location --retry 3 --silent --show-error \
+            'https://play-lh.googleusercontent.com/hdf_aCYjynWI5DxfwErgPi_rS0OSxt-QioiAr39j5AvN5aBJxIPR_fNF9iBAzlQtpQNa0T8ekHkQR8CU8UTyVGs=w1052-h592-rw' \
+            -o public/assets/norrnote/05-edit-note.webp
+
+          test -s public/assets/norrnote/01-today.webp
+          test -s public/assets/norrnote/02-create.webp
+          test -s public/assets/norrnote/03-permanent.webp
+          test -s public/assets/norrnote/04-reminders.webp
+          test -s public/assets/norrnote/05-edit-note.webp
+          file public/assets/norrnote/*.webp
+
+      - name: Commit cached screenshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/norrnote
+          if git diff --cached --quiet; then
+            echo "No screenshot changes."
+            exit 0
+          fi
+          git commit -m "Cache NorrNote Google Play screenshots"
+          git push
